@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 
-export default class Teste extends Component {
+export default class Teste teste extends Component {
   render() {
     return (
-      <div>Teste</div>
+      <div>Teste teste</div>
     )
   }
 }
