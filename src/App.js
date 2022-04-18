@@ -9,6 +9,10 @@ const GlobalStyle = createGlobalStyle`
     margin:0;
     padding:0;
     box-sizing:border-box;
+    input::placeholder {
+    color: white;
+    font-weight: 700;
+  }
   }
   body{
     max-width: 1920px;
