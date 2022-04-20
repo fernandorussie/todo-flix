@@ -141,7 +141,6 @@ export default class Slide extends Component {
                 )}>
           {Carrossel.map((item) => (
               <div>
-                
                 <img src={item.poster} alt={item.title}/>
                 <div>
                   <p>{item.title}</p>
