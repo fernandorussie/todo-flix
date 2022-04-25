@@ -74,7 +74,7 @@ export default class Slide extends Component {
       {title:"Capitão Fantástico",
       overview:"Nas florestas do estado de Washington, um pai cria seus seis filhos longe da civilização, em uma rígida rotina de aventuras. Ele é forçado a deixar o isolamento e leva sua família para encarar o mundo, desafiando sua ideia do que significa ser pai.",
       rank:"4/5",
-      poster:Img0
+      poster:"https://files.fm/thumb_show.php?i=dz2pnnjta"
       }
     ],
     Carrossel:[

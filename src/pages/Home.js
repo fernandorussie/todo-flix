@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 import Slide from '../components/slide'
-import Header from '../components/header'
+import * as S from '../components/styles/styleApp'
+import { Link } from 'react-router-dom'
 
 export default class Home extends Component {
   render() {
     return (
       <div>
-        {/* <Header/> */}
+        <Link to='/todos'>
+          <S.Search2 onChange={this.filtro} placeholder="Pesquisar" type='text'/>
+        </Link>
         <Slide/>
       </div>
     )

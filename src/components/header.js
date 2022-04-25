@@ -17,10 +17,15 @@ export default class Header extends Component {
     showSearch:false,
     showAdd:false,
     swapUser:1,
-
-    searchFilm:''
+    file: null
   }
   
+  handleChange(e){
+    this.handleChange = this.handleChange.bind(this)
+    this.setState({
+      file: URL.createObjectURL(e.target.files[0])
+    })
+  }
   isToggleMenu = () => {
     this.setState({
       showMenu:!this.state.showMenu,
@@ -118,8 +123,8 @@ export default class Header extends Component {
                             </S.Form>
                             <S.FormImg>
                               <S.TitleInput>Imagem de Capa</S.TitleInput>
-                              <S.InputImg src={IMGinput} alt=""/>
-                              <input type="file" name="image"/>
+                              <S.InputImg src={this.state.file} alt=""/>
+                              <input type="file" name="image" onChange={this.handleChange}/>
                             </S.FormImg>
                           </S.FormBox>
                           <S.SectionStatus>
@@ -146,9 +151,11 @@ export default class Header extends Component {
                             <button>Confirmar</button>
                           </div>
                         </S.BoxModal>): null}
-                    <S.BoxSearch>
-                      <S.Search placeholder="Pesquisar" type="text"/>
-                    </S.BoxSearch>
+                    
+                      <S.BoxSearch>
+                        <S.Search placeholder="Pesquisar" type="text"/>
+                      </S.BoxSearch>
+                      
                     <S.BoxPerfils>
                       <S.BoxConfig onClick={this.isTogglePerfil}>
                         {swapUser === 1 ? 

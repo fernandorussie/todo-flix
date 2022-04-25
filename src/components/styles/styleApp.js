@@ -116,12 +116,12 @@ export const BoxSearch = styled.div`
 export const Search = styled.input`
     width: 0vw;
     height: 43px;
-    background-color: #2C2C2C;
+    background-color: red;
     border-radius: 4px;
     border:none;
     color: white;
     padding:15px 20px 15px 20px;
-
+    visibility: hidden;
     background-image: url(${Lupa});
     background-position: 10px;
     background-size: 20px;
