@@ -39,7 +39,6 @@ export const BoxSearch = styled.div`
   align-items: center;
   position:relative;
 `
-
 export default class Todos extends Component {
   state = {
     filmes: Data,
