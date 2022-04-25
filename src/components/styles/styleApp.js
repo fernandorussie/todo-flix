@@ -20,15 +20,14 @@ export const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
     margin: 0 auto;
     padding:10px;
-    background-color: black;
+    background-color: ;
   }
 `
 export const Body = styled.div`
     
 `
 export const Container = styled.div`
-    
-    
+    background-color: black;
 `
 export const BoxSection = styled.div`
     height: 10vh;
@@ -42,7 +41,10 @@ export const SectionLogo = styled.div`
     align-items: center;
     color: white;
 `
-export const Logo = styled.h1`
+export const Logo = styled(Link)`
+  font-size: 38px;
+  font-weight: 700;
+  text-decoration: none;
   font-family: 'Bebas Neue', cursive;
   color: #E71B27;
   cursor:pointer;
@@ -113,7 +115,7 @@ export const BoxSearch = styled.div`
 `
 export const Search = styled.input`
     width: 0vw;
-    height: 40px;
+    height: 43px;
     background-color: #2C2C2C;
     border-radius: 4px;
     border:none;
@@ -126,6 +128,29 @@ export const Search = styled.input`
     background-repeat:no-repeat;
 
     position: absolute;
+    transition: 0.3s ease all;
+    &:focus{
+      width: 25vw;
+      padding-left:35px;
+    } 
+`
+export const Search2 = styled.input`
+    width: 0vw;
+    height: 44px;
+    background-color: #2C2C2C;
+    border-radius: 4px;
+    border:none;
+    color: white;
+    padding:15px 20px 15px 20px;
+
+    background-image: url(${Lupa});
+    background-position: 10px;
+    background-size: 20px;
+    background-repeat:no-repeat;
+
+    position: absolute;
+    top: 3.4%;
+    left: 66%;
     transition: 0.3s ease all;
     &:focus{
       width: 25vw;

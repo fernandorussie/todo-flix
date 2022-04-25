@@ -10,15 +10,16 @@ import Img0 from '../assets/ToDoFlix Início/capitão.png'
 import styled from 'styled-components'
 
 const Container = styled.div`
-max-width: 1920px;
-width: 100%;
-min-height: 100vh;
+width: 95%;
 margin: 0 auto;
 padding: 25px;
 ` 
+const SectionBestFilm = styled.section`
+  width: 100%;
+`
 const BestFilm = styled.div`
 display: flex;
-padding: 25px;
+padding: 25px 0;
 width: 100%;
 `
 const BoxDiscription = styled.div`
@@ -43,6 +44,22 @@ const Arrow = styled.svg`
   &:hover{
     opacity: 1;
   }
+`
+const CardCarousel = styled.div`
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding-bottom: 5px;
+`
+const BoxInfo = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-top: 5px;
 `
 const BtnFav = styled.figure`
   width: 22px;
@@ -104,7 +121,7 @@ export default class Slide extends Component {
     const {DestaqueFilmes, Carrossel, colorFav} = this.state
     return (
       <Container>
-        <section>
+        <SectionBestFilm>
           <BestFilm>
             <figure>
               <img src={DestaqueFilmes[0].poster} alt=""/>
@@ -130,7 +147,7 @@ export default class Slide extends Component {
               </div>
             </BoxDiscription>
           </BestFilm>
-        </section>
+        </SectionBestFilm>
         <SectionCarousel style={{color:'white'}}>
         <Carousels pauseOnHover={true} cellAlign={'center'} cellSpacing={10} dragging={false} autoGenerateStyleTag={true} renderBottomCenterControls={false} wrapAround={true} slidesToShow={4} autoplay={true} autoplayInterval={2500} renderCenterLeftControls={({ previousSlide }) => (
                     <Arrow onClick={previousSlide} xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></Arrow>
@@ -140,13 +157,13 @@ export default class Slide extends Component {
                         xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></Arrow>
                 )}>
           {Carrossel.map((item) => (
-              <div>
+              <CardCarousel>
                 <img src={item.poster} alt={item.title}/>
-                <div>
+                <BoxInfo>
                   <p>{item.title}</p>
                   <p>{item.overview}</p>
-                </div>
-              </div>
+                </BoxInfo>
+              </CardCarousel>
           ))}
         </Carousels>
         </SectionCarousel>
