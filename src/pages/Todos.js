@@ -72,7 +72,7 @@ filtro = (e) => {
         <S.Search2 onChange={this.filtro} placeholder="Pesquisar" type='text'/>
         <Title>TODOS OS FILMES</Title>
         <BoxWraper>
-          {this.state.listafilter.map((item) => (
+          {this.state.filmes.map((item) => (
             <Card key={item.id}>
               <Poster src={item.poster}/>
               <p>{item.title}</p>

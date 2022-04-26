@@ -8,7 +8,7 @@ export default class Home extends Component {
     return (
       <div>
         <Link to='/todos'>
-          <S.Search2 onChange={this.filtro} placeholder="Pesquisar" type='text'/>
+          <S.Search2 placeholder="Pesquisar" type='text'/>
         </Link>
         <Slide/>
       </div>
