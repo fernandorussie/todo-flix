@@ -3,12 +3,6 @@ import React, { Component } from 'react'
 import Data from '../db.json'
 import styled from 'styled-components'
 
-import Img1 from '../assets/ToDoFlix Início/img1.png'
-import Img2 from '../assets/ToDoFlix Início/img2.png'
-import Img3 from '../assets/ToDoFlix Início/img3.png'
-import Img4 from '../assets/ToDoFlix Início/img4.png'
-import Img5 from '../assets/ToDoFlix Início/img5.png'
-import Img0 from '../assets/ToDoFlix Início/capitão.png'
 import * as S from '../components/styles/styleApp'
 const Title = styled.h1`
 color:white;
@@ -72,7 +66,7 @@ filtro = (e) => {
         <S.Search2 onChange={this.filtro} placeholder="Pesquisar" type='text'/>
         <Title>TODOS OS FILMES</Title>
         <BoxWraper>
-          {this.state.filmes.map((item) => (
+          {this.state.listafilter.map((item) => (
             <Card key={item.id}>
               <Poster src={item.poster}/>
               <p>{item.title}</p>

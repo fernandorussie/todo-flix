@@ -6,7 +6,6 @@ import Img2 from '../assets/ToDoFlix Início/img2.png'
 import Img3 from '../assets/ToDoFlix Início/img3.png'
 import Img4 from '../assets/ToDoFlix Início/img4.png'
 import Img5 from '../assets/ToDoFlix Início/img5.png'
-import Img0 from '../assets/ToDoFlix Início/capitão.png'
 import styled from 'styled-components'
 
 const Container = styled.div`

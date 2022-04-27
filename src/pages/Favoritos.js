@@ -59,7 +59,7 @@ filtro = (e) => {
   render() {
     return (
       <div>
-        <S.Search2 onChange={this.filtro} placeholder="Pesquisar" type='text'/>
+        <S.Search2 onChange={this.filtro} placeholder="Pesquisar favoritos" type='text'/>
         <Teste>OS FILMES FAVORITOS </Teste>
         <BoxWraper>
           {this.state.listafilter.map(item => (

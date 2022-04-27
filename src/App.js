@@ -1,3 +1,51 @@
+// import React, { Component } from 'react'
+// import { api } from './services/api'
+
+
+// export default class App extends Component {
+//  state = {
+//    filmes:[],
+//    listaFilmes:[]
+//  }
+//  async componentDidMount() {
+//    this.getFilmes();
+// }
+// getFilmes = async () => {
+//   const response = await api.get('/filmes')
+//   console.log(response)
+
+//   const filmes = response.data.map((item) =>  { return {
+//       ...item,
+//   }
+//   })
+
+//   this.setState({
+//     filmes:filmes
+//   })
+// }
+
+// // api.get('/filmes').then((response) => {
+// //   console.log(response);
+// //   this.state.listaFilmes(response.data)
+// // }
+
+
+//   render() {
+//     return (
+//       <div>
+//         {this.state.filmes?.map((item) => (
+//          <div>
+//            <p>{item.title}</p>
+//            <img src={item.poster}/>
+//          </div> 
+//         ))}
+//       </div>
+//     )
+//   }
+// }
+
+
+
 import React, { Component } from 'react'
 
 import Header from './components/header'
@@ -10,10 +58,8 @@ import Adicionados from './pages/Adicionados.js'
 
 import { BrowserRouter as Router,
   Routes,
-  Route,
-  Link } from 'react-router-dom'
+  Route} from 'react-router-dom'
 
-import styled from 'styled-components'
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
