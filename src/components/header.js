@@ -1,14 +1,5 @@
 import React, { Component } from 'react'
-
 import * as S from './styles/styleApp'
-import { BrowserRouter as Router,
-  Routes,
-  Route,
-  Link } from 'react-router-dom'
-
-  import Todos from '../pages/Todos'
-
-import IMGinput from '../assets/assetsHeader/inputIMG.svg'
 
 export default class Header extends Component {
   state={
@@ -20,17 +11,11 @@ export default class Header extends Component {
     file: null
   }
   
-  handleChange(e){
-    this.handleChange = this.handleChange.bind(this)
-    this.setState({
-      file: URL.createObjectURL(e.target.files[0])
-    })
-  }
   isToggleMenu = () => {
     this.setState({
       showMenu:!this.state.showMenu,
-      showPerfil:false,
-      showAdd:false
+      // showPerfil:false,
+      // showAdd:false
     })
   }
   isTogglePerfil = () => {
@@ -124,7 +109,7 @@ export default class Header extends Component {
                             <S.FormImg>
                               <S.TitleInput>Imagem de Capa</S.TitleInput>
                               <S.InputImg src={this.state.file} alt=""/>
-                              <input type="file" name="image" onChange={this.handleChange}/>
+                              <input type="file" name="myImage" accept=".png, .jpg, .jpeg"  onChange={this.handleChange}/>
                             </S.FormImg>
                           </S.FormBox>
                           <S.SectionStatus>

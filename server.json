@@ -1,0 +1,252 @@
+{"filmes": [
+  {
+    "id": 1,
+    "title": "UNCHARTED",
+    "descricao": "Os namorados Brad e Janet têm um pneu furado durante uma tempestade e descobrem a misteriosa mansão do louco cientista Dr. Frank-N-Furter.",
+    "poster": "http://cinestera.com.br/wp-content/uploads/2022/02/UnCharted.jpeg",
+    "isAdicionadoRecentemente": true,
+    "isFavorito": false,
+    "isAssistido": true,
+    "stars": 5
+  },
+  {
+    "id": 2,
+    "title": "Thor Amor e Trovão",
+    "descricao": "Cansados de serem os excluídos, Hunter e Kevin decidem formar uma banda de heavy metal para vencer o festival da escola e conquistar a admiração de todos.",
+    "poster": "http://www.apocalipsters.com.br/wp-content/uploads/2020/11/maxresdefault-1.jpg",
+    "isAdicionadoRecentemente": true,
+    "isFavorito": true,
+    "isAssistido": true,
+    "stars": 4
+  },
+  {
+    "id": 3,
+    "title": "Pantera Negra - Walkanda Pra Sempre",
+    "descricao": "Em um futuro próximo distópico no Brasil, um governo autoritário ordena que todos os cidadãos afrodescendentes se mudem para a África.",
+    "poster": "https://1.bp.blogspot.com/-VUCGbGT8C5Q/YQCOGlCo4lI/AAAAAAACPUk/7H4w-13oPooUkzCOuo2Fpn74XITQ7mawACLcBGAsYHQ/s540/forever.jpg",
+    "isAdicionadoRecentemente": true,
+    "isFavorito": false,
+    "isAssistido": false,
+    "stars": null
+  },
+  {
+    "id": 4,
+    "title": "O Homem do Norte",
+    "descricao": "No Rio de Janeiro dos anos 1950, Guida e Eurídice são cruelmente separadas, impedidas de viver os sonhos que alimentaram juntas ainda adolescentes. ",
+    "poster": "https://i0.wp.com/lugarnenhum.net/wp-content/uploads/2022/04/the-northman.jpg?fit=1000%2C500&ssl=1",
+    "isAdicionadoRecentemente": true,
+    "isFavorito": false,
+    "isAssistido": false,
+    "stars": null
+  },
+  {
+    "id": 5,
+    "title": "Avatar 2 The Way of Water",
+    "descricao": "Nos bastidores do show no Theatro Municipal de São Paulo, o rapper e ativista Emicida celebra o grande legado da cultura negra brasileira. ",
+    "poster": "http://disneyplusbrasil.com.br/wp-content/uploads/2022/03/Avatar-2-The-Way-of-Water.jpg",
+    "isAdicionadoRecentemente": true,
+    "isFavorito": false,
+    "isAssistido": true,
+    "stars": 3
+  },
+  {
+    "id": 6,
+    "title": "Vende-se Esta Casa",
+    "descricao": "Logan e sua mãe estão tentando se recuperar após a morte do pai da família. Para isso, eles se mudam temporariamente para uma casa desocupada de parentes.",
+    "poster": "https://3.bp.blogspot.com/-W37elNuXbbw/Wm3U-RwmPZI/AAAAAAAACXo/GB15Sf18ayk2aJ4sOekKdHPdwqkXIeGnwCLcBGAs/s640/d95e12462a0948d182735e57398490ead3535206.jpg",
+    "isAdicionadoRecentemente": true,
+    "isFavorito": false,
+    "isAssistido": true,
+    "stars": 1
+  },
+  {
+    "id": 7,
+    "title": "Morbius",
+    "descricao": "Winston Smith é um funcionário público cuja função é reescrever a história de forma a colocar os líderes de um país fictício sob uma luz positiva. ",
+    "poster": "https://burnbook.b-cdn.net/wp-content/uploads/2022/04/Morbius-2.webp",
+    "isAdicionadoRecentemente": true,
+    "isFavorito": true,
+    "isAssistido": true,
+    "stars": 4
+  },
+  {
+    "id": 8,
+    "title": "Lightyear",
+    "descricao": "Val é a fiel empregada domestica de uma família rica. Mas a chegada de sua filha gera tensão na casa e faz com que ela comece a questionar esse papel.",
+    "poster": "https://rollingstone.uol.com.br/media/uploads/lightyear-pixar-poster.jpg",
+    "isAdicionadoRecentemente": true,
+    "isFavorito": true,
+    "isAssistido": true,
+    "stars": 5
+  },
+  {
+    "id": 9,
+    "title": "Pânico 5",
+    "descricao": "Nadia morre tragicamente na noite de seu aniversário de 36 anos. Mas, inexplicavelmente, ela se vê de volta à vida e à festa que seus amigos organizaram para ela.",
+    "poster": "https://netflix-news.atsit.in/br/wp-content/uploads/2022/03/panico-6-confirmado-para-lancamento-no-proximo-ano.jpg",
+    "isAdicionadoRecentemente": true,
+    "isFavorito": true,
+    "isAssistido": true,
+    "stars": 5
+  },
+  {
+    "id": 10,
+    "title": "Homem-Aranha: Sem Volta para Casa",
+    "descricao": "Nadia morre tragicamente na noite de seu aniversário de 36 anos. Mas, inexplicavelmente, ela se vê de volta à vida e à festa que seus amigos organizaram para ela.",
+    "poster": "https://filmdaily.co/wp-content/uploads/2021/12/spiderman-01-1.jpg",
+    "isAdicionadoRecentemente": true,
+    "isFavorito": true,
+    "isAssistido": true,
+    "stars": 5
+  },
+  {
+    "id": 11,
+    "title": "Arcane",
+    "descricao": "Nadia morre tragicamente na noite de seu aniversário de 36 anos. Mas, inexplicavelmente, ela se vê de volta à vida e à festa que seus amigos organizaram para ela.",
+    "poster": "https://meekz.com.br/wp-content/uploads/2021/10/FC4O0PQWQAUFo4U.jpg",
+    "isAdicionadoRecentemente": true,
+    "isFavorito": true,
+    "isAssistido": true,
+    "stars": 5
+  },
+  {
+    "id": 12,
+    "title": "What If...?",
+    "descricao": "Nadia morre tragicamente na noite de seu aniversário de 36 anos. Mas, inexplicavelmente, ela se vê de volta à vida e à festa que seus amigos organizaram para ela.",
+    "poster": "https://geekdoinfinito.com.br/wp-content/uploads/2021/08/What-If-Disney-Plus-1024x576-1-768x432-1.jpg",
+    "isAdicionadoRecentemente": true,
+    "isFavorito": true,
+    "isAssistido": true,
+    "stars": 5
+  },
+  {
+    "id": 13,
+    "title": "Doutor Estranho no Multiverso na Loucura",
+    "descricao": "Nadia morre tragicamente na noite de seu aniversário de 36 anos. Mas, inexplicavelmente, ela se vê de volta à vida e à festa que seus amigos organizaram para ela.",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp6JPJokkrRS7xBASYJuB2oX9cI8IjOCpzsZDMbqVCH2cEQIgkyD9-auqNoTxCPX9meuQ&usqp=CAU",
+    "isAdicionadoRecentemente": true,
+    "isFavorito": true,
+    "isAssistido": true,
+    "stars": 5
+  },
+  {
+    "id": 14,
+    "title": "Stranger Things 4",
+    "descricao": "Nadia morre tragicamente na noite de seu aniversário de 36 anos. Mas, inexplicavelmente, ela se vê de volta à vida e à festa que seus amigos organizaram para ela.",
+    "poster": "https://www.metroworldnews.com.br/resizer/SfpSMOCNOLgi8PZcBjvg7eCkr9o=/800x0/filters:format(png):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/QAK7XA4PFBB23J4USLMUU4BJME.png",
+    "isAdicionadoRecentemente": true,
+    "isFavorito": true,
+    "isAssistido": true,
+    "stars": 5
+  },
+  {
+    "id": 15,
+    "title": "As Branquelas",
+    "descricao": "Nadia morre tragicamente na noite de seu aniversário de 36 anos. Mas, inexplicavelmente, ela se vê de volta à vida e à festa que seus amigos organizaram para ela.",
+    "poster": "https://image.tmdb.org/t/p/w1280/gghCiBhPt5AImIJkQz0fPR0C1cL.jpg",
+    "isAdicionadoRecentemente": true,
+    "isFavorito": true,
+    "isAssistido": true,
+    "stars": 5
+  },
+  {
+    "id": 16,
+    "title": "Moonfall",
+    "descricao": "Nadia morre tragicamente na noite de seu aniversário de 36 anos. Mas, inexplicavelmente, ela se vê de volta à vida e à festa que seus amigos organizaram para ela.",
+    "poster": "https://br.atsit.in/wp-content/uploads/2022/01/lionsgate-lanca-trailer-oficial-de-moonfall-um-novo-filme-de-desastre-do-diretor-do-dia-da-independencia.jpg",
+    "isAdicionadoRecentemente": false,
+    "isFavorito": true,
+    "isAssistido": true,
+    "stars": 5
+  },
+  {
+    "id": 17,
+    "title": "Crocodilos – A Morte te Espera",
+    "descricao": "Nadia morre tragicamente na noite de seu aniversário de 36 anos. Mas, inexplicavelmente, ela se vê de volta à vida e à festa que seus amigos organizaram para ela.",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAn80716MuXmxiqMObLJAsnCL3eX0ydrn0CuC1L7Ca6UyLdpI7dNLriXCZ6jb57rwaZSM&usqp=CAU",
+    "isAdicionadoRecentemente": true,
+    "isFavorito": true,
+    "isAssistido": true,
+    "stars": 5
+  },
+  {
+    "id": 18,
+    "title": "Jurassic World: Domínio",
+    "descricao": "Nadia morre tragicamente na noite de seu aniversário de 36 anos. Mas, inexplicavelmente, ela se vê de volta à vida e à festa que seus amigos organizaram para ela.",
+    "poster": "https://epipoca.com.br/wp-content/uploads/2021/06/jurassic-world-dominion-sam-neill-compartilha-poster.jpg",
+    "isAdicionadoRecentemente": true,
+    "isFavorito": true,
+    "isAssistido": true,
+    "stars": 5
+  },
+  {
+    "id": 19,
+    "title": "Capitão Fantástico",
+    "descricao": "Nas florestas do estado de Washington, um pai cria seus seis filhos longe da civilização, em uma rígida rotina de aventuras. Ele é forçado a deixar o isolamento e leva sua família para encarar o mundo, desafiando sua ideia do que significa ser pai.",
+    "poster": "https://files.fm/thumb_show.php?i=dz2pnnjta",
+    "isAdicionadoRecentemente": false,
+    "isFavorito": true,
+    "isAssistido": true,
+    "stars": 5
+  },
+  {
+    "id": 20,
+    "title":"Shrek",
+    "descricao":"Para resgatar uma princesa das garras de um dragão que cospe fogo, o ogro Shrek se une a um companheiro improvável: um burro brincalhão.",
+    "poster": "https://files.fm/thumb_show.php?i=p4twytxy3",
+    "isAdicionadoRecentemente": false,
+    "isFavorito": true,
+    "isAssistido": true,
+    "stars": 5
+  },
+  {
+    "id": 21,
+    "title": "Hoje Eu Quero Voltar Sozinho",
+    "descricao": "Um novo colega de sala transforma a vida do estudante Leonardo, que também é cego, e complica sua amizade com sua melhor amiga.",
+    "poster": "https://files.fm/thumb_show.php?i=vfxz727qb",
+    "isAdicionadoRecentemente": false,
+    "isFavorito": true,
+    "isAssistido": true,
+    "stars": 5
+  },
+  {
+    "id": 22,
+    "title": "Homem-Aranha no AranhaVerso",
+    "descricao": "Após ser picado por uma aranha radioativa, o garoto Miles Morales logo aprende a lançar teias com seus parceiros de um universo alternativo.",
+    "poster": "https://files.fm/thumb_show.php?i=7z2rsuasq",
+    "isAdicionadoRecentemente": false,
+    "isFavorito": true,
+    "isAssistido": true,
+    "stars": 5
+  },
+  {
+    "id": 23,
+    "title": "Um Sonho de Liberdade",
+    "descricao": "Condenado pelo assassinato da esposa e do amante dela, um banqueiro se apega à esperança e à amizade com um detento chamado Red para sobreviver à prisão.",
+    "poster": "https://files.fm/thumb_show.php?i=qx9kv8mrh",
+    "isAdicionadoRecentemente": false,
+    "isFavorito": true,
+    "isAssistido": true,
+    "stars": 5
+  },
+  {
+    "id": 24,
+    "title": "Que Horas Ela Volta?",
+    "descricao": "Val é a fiel empregada domestica de uma família rica. Mas a chegada de sua filha gera tensão na casa e faz com que ela comece a questionar esse papel.",
+    "poster": "https://files.fm/thumb_show.php?i=nte8d3bfx",
+    "isAdicionadoRecentemente": false,
+    "isFavorito": true,
+    "isAssistido": true,
+    "stars": 5
+  },
+  {
+    "id": 25,
+    "title": "Homem-Aranha: Através do Aranhaverso",
+    "descricao": "Val é a fiel empregada domestica de uma família rica. Mas a chegada de sua filha gera tensão na casa e faz com que ela comece a questionar esse papel.",
+    "poster": "http://assets.kompasiana.com/items/album/2021/12/05/spider-man-across-the-spider-verse-part-one-title-image-61ac580e62a70463ad3e8fb8.jpg",
+    "isAdicionadoRecentemente": true,
+    "isFavorito": true,
+    "isAssistido": true,
+    "stars": 5
+  }  
+]}
