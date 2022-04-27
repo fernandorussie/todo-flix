@@ -45,7 +45,7 @@ filtro = (e) => {
       listafilter:filmes
     })
     return
-  }
+  } 
   const filmeconvert = filmes.filter((item) => {
     if(item.title.toLowerCase().includes(e.target.value.toLowerCase())){
       return true
