@@ -196,7 +196,7 @@ export const BoxAccount = styled.div`
 export const AvatarUser = styled.svg`
   margin-right: 5px;
 `
-export const BoxModal = styled.div`
+export const BoxModal = styled.form`
   position: fixed;
   top:10%;
   left:25%;

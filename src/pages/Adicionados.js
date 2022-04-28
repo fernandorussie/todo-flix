@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
 
-import Data from '../db.json'
+//services
+import { api } from '../services/api'
+// import Data from '../db.json'
+
+//style
 import styled from 'styled-components'
 import * as S from '../components/styles/styleApp'
 
-const Teste = styled.h1`
+
+const Title = styled.h1`
 color:white;
 `
 const BoxWraper = styled.div`
@@ -27,17 +32,35 @@ const Poster = styled.img`
   width: 300px;
   height: 170px;
 `
-export default class Favoritos extends Component {
-
+export const BoxSearch = styled.div`
+  width: 25vw;
+  display: flex;
+  align-items: center;
+  position:relative;
+`
+export default class Todos extends Component {
   state = {
-    filmes: Data,
-    listafilter:[]
+    filmes: [],
+    listafilter: []
   }
-componentWillMount() {
-    this.setState({
-      listafilter:this.state.filmes
-    })
+  
+async componentDidMount() {  
+  this.getFilms()
 }
+getFilms = async () => {
+  const response = await api.get('/filmes')
+  console.log(response.data)
+  
+  const filmes = response.data.map((item) => {
+    return {...item,}}
+  )
+
+  this.setState({
+    filmes:filmes,
+    listafilter:filmes
+  })
+}
+
 filtro = (e) => {
   const {filmes} = this.state;
   if(e.target.value === '') {
@@ -55,16 +78,15 @@ filtro = (e) => {
     listafilter:filmeconvert
   })
 }
-
   render() {
     return (
       <div>
         <S.Search2 onChange={this.filtro} placeholder="Pesquisar" type='text'/>
-        <Teste>OS FILMES RECENTEMENTE ADICIONADOS</Teste>
+        <Title>TODOS OS FILMES</Title>
         <BoxWraper>
-          {this.state.listafilter.map(item => (
-          <>
-            {item.isAdicionadoRecentemente &&(
+          {this.state.listafilter.map((item) => (
+            <>
+            {item.isAdicionado &&(
             <Card key={item.id}>
               <Poster src={item.poster}/>
               <p>{item.title}</p>

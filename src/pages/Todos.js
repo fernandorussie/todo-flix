@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
 
-import Data from '../db.json'
-import styled from 'styled-components'
+//services
+import { api } from '../services/api'
+// import Data from '../db.json'
 
+//style
+import styled from 'styled-components'
 import * as S from '../components/styles/styleApp'
+
+
 const Title = styled.h1`
 color:white;
 `
@@ -35,14 +40,27 @@ export const BoxSearch = styled.div`
 `
 export default class Todos extends Component {
   state = {
-    filmes: Data,
-    listafilter:[]
+    filmes: [],
+    listafilter: []
   }
-componentWillMount() {
-    this.setState({
-      listafilter:this.state.filmes
-    })
+  
+async componentDidMount() {  
+  this.getFilms()
 }
+getFilms = async () => {
+  const response = await api.get('/filmes')
+  console.log(response.data)
+  
+  const filmes = response.data.map((item) => {
+    return {...item,}}
+  )
+
+  this.setState({
+    filmes:filmes,
+    listafilter:filmes
+  })
+}
+
 filtro = (e) => {
   const {filmes} = this.state;
   if(e.target.value === '') {

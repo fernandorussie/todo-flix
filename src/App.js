@@ -5,7 +5,9 @@
 // export default class App extends Component {
 //  state = {
 //    filmes:[],
-//    listaFilmes:[]
+//    listaFilmes:[],
+//    title:[],
+//    poster:[]
 //  }
 //  async componentDidMount() {
 //    this.getFilmes();
@@ -23,7 +25,30 @@
 //     filmes:filmes
 //   })
 // }
-
+// add = async () => {
+//   const add = await api.post("/filmes",{
+//     title: this.state.title,
+//     poster: this.state.poster
+//   })
+//   //não sei pra q serve
+//   // .then(function (response) {
+//   //   console.log(response);
+//   // })
+//   // .catch(function (error) {
+//   //   console.error(error);
+//   // });
+//   // console.log(add)
+// }
+// handleChange = (e) => {
+//   this.setState({
+//     title: e.target.value
+//   })
+// }
+// handleChangeImg = (e) => {
+//   this.setState({
+//     poster: e.target.value
+//   })
+// }
 // // api.get('/filmes').then((response) => {
 // //   console.log(response);
 // //   this.state.listaFilmes(response.data)
@@ -32,17 +57,39 @@
 
 //   render() {
 //     return (
-//       <div>
-//         {this.state.filmes?.map((item) => (
-//          <div>
+//       <div style={{display:"flex",justifyContent:"center",flexWrap:"wrap", width:"100%",background:"blue"}}>
+//         <form onSubmit={this.add}>
+
+//           <input onChange={this.handleChange} type="text" placeholder="Digite seu nome"/>
+
+//           <input onChange={this.handleChangeImg} type="text" placeholder="Digite seu link"/>
+
+//           <button style={{height:"50px"}}>Adicionar Objeto</button>
+          
+//         </form>
+        
+//         {this.state.filmes?.map((item, id) => (
+//          <div key={id} style={{margin:"12px"}}>
 //            <p>{item.title}</p>
-//            <img src={item.poster}/>
+//            <img style={{width:"300px",height:"170px"}} src={item.poster}/>
 //          </div> 
 //         ))}
 //       </div>
 //     )
 //   }
 // }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

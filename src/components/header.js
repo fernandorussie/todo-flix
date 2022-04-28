@@ -1,16 +1,27 @@
 import React, { Component } from 'react'
+
+//components 
+import { api } from '../services/api'
+
+//style
 import * as S from './styles/styleApp'
 
 export default class Header extends Component {
   state={
+    //OpenModal
     showMenu:false,
     showPerfil:false,
     showSearch:false,
     showAdd:false,
     swapUser:1,
-    file: null
+
+    //FunctionAdd
+    title:[],
+    description:[],
+    poster:[],
+    isAdicionado:[],
   }
-  
+  //OpenModal
   isToggleMenu = () => {
     this.setState({
       showMenu:!this.state.showMenu,
@@ -61,10 +72,28 @@ export default class Header extends Component {
       showMenu:false,
     })
   }
-
-  handleChange = (e) => {
+  //FunctionAdd
+  isAddFilms = () => {
+    const addFilms = api.post('/filmes',{
+      title:this.state.title,
+      poster:this.state.poster,
+      description:this.state.description,
+      isAdicionado:true
+    })
+  }
+  handleChangeTitle = (e) => {
     this.setState({
-      searchFilm:e.target.value
+      title:e.target.value
+    })
+  }
+  handleChangePoster = (e) => {
+    this.setState({
+      poster:e.target.value
+    })
+  }
+  handleChangeDescription = (e) => {
+    this.setState({
+      description:e.target.value
     })
   }
   render() {
@@ -90,8 +119,8 @@ export default class Header extends Component {
                 </S.SectionLogo>
                 <S.SectionAdd>
                     <S.BtnAdd onClick={this.isToggleAdd}>Adicionar filme</S.BtnAdd>
-                        {showAdd ? (
-                        <S.BoxModal>
+                        {showAdd ? ( 
+                        <S.BoxModal onSubmit={this.isAddFilms}>
                           <S.TitleBox>
                             <S.TitleModal>Adicionar Filme</S.TitleModal>
                           </S.TitleBox>
@@ -99,17 +128,17 @@ export default class Header extends Component {
                             <S.Form>
                               <div>
                                 <S.TitleInput>Nome</S.TitleInput>
-                                <S.InputName type="text"/>
+                                <S.InputName type="text" placeholder="Digite o nome do filme" onChange={this.handleChangeTitle}/>
                               </div>
                               <div>
                               <S.TitleInput>Descrição</S.TitleInput>
-                                <S.InputDescription type="text"/>
+                                <S.InputDescription type="text" placeholder="Digite a sinopse" onChange={this.handleChangeDescription}/>
                               </div>
                             </S.Form>
                             <S.FormImg>
                               <S.TitleInput>Imagem de Capa</S.TitleInput>
-                              <S.InputImg src={this.state.file} alt=""/>
-                              <input type="file" name="myImage" accept=".png, .jpg, .jpeg"  onChange={this.handleChange}/>
+                              <S.InputImg src=""alt=""/>
+                              <input type="text" placeholder="Digite seu link" onChange={this.handleChangePoster}/>
                             </S.FormImg>
                           </S.FormBox>
                           <S.SectionStatus>
@@ -135,7 +164,9 @@ export default class Header extends Component {
                             <button onClick={this.isToggleAdd}>Cancelar</button>
                             <button>Confirmar</button>
                           </div>
-                        </S.BoxModal>): null}
+                        </S.BoxModal>
+                        
+                        ): null}
                     
                       <S.BoxSearch>
                         <S.Search placeholder="Pesquisar" type="text"/>
