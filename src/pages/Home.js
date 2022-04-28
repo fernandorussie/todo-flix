@@ -70,10 +70,11 @@ filtro = (e) => {
       })
       return
     }
-    const filmeconvert = filmes.filter((item) => {
+    const filmeconvert = filmes.filter((item) => { 
       if(item.title.toLowerCase().includes(e.target.value.toLowerCase())){
         return true
-      }
+      } 
+      return
     })
     this.setState({
       listafilter:filmeconvert

@@ -74,7 +74,7 @@ export default class Header extends Component {
   }
   //FunctionAdd
   isAddFilms = () => {
-    const addFilms = api.post('/filmes',{
+     api.post('/filmes',{
       title:this.state.title,
       poster:this.state.poster,
       description:this.state.description,
