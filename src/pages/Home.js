@@ -17,22 +17,27 @@ color:white;
 const BoxWraper = styled.div`
   display:flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: none;
 
 `
 const Card = styled.div`
-  height: 38vh;
-  margin:18px;
-  padding: 10px 0;
+  width:285px;
+  height: 220px;
+  margin:8px 12px 8px 0;
+  
   display:flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  align-items: ;
   color:white;
 `
 const Poster = styled.img`
-  width: 300px;
-  height: 170px;
+  width: 280px;
+  height: 165px;
+`
+const TitleFilm = styled.p`
+word-wrap:break-word;
+width: 80%;
+padding-top: 5px;
 `
 export const BoxSearch = styled.div`
   width: 25vw;
@@ -84,12 +89,11 @@ filtro = (e) => {
     return (
       <div>
         <S.Search2 onChange={this.filtro} placeholder="Pesquisar" type='text'/>
-        <Title>TODOS OS FILMES</Title>
         {this.state.listafilter.length < 1? <Slide/>:(<BoxWraper>
             {this.state.listafilter.map((item) => (
               <Card key={item.id}>
                 <Poster src={item.poster}/>
-                <p>{item.title}</p>
+                <TitleFilm>{item.title}</TitleFilm>
               </Card>
             ))}
             </BoxWraper>)}

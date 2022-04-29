@@ -124,7 +124,7 @@
       "id": 13,
       "title": "Doutor Estranho no Multiverso na Loucura",
       "description": "Nadia morre tragicamente na noite de seu aniversário de 36 anos. Mas, inexplicavelmente, ela se vê de volta à vida e à festa que seus amigos organizaram para ela.",
-      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp6JPJokkrRS7xBASYJuB2oX9cI8IjOCpzsZDMbqVCH2cEQIgkyD9-auqNoTxCPX9meuQ&usqp=CAU",
+      "poster": "http://disneyplusbrasil.com.br/wp-content/uploads/2021/05/Wanda-e-Doutor-Estranho-1024x576.jpg",
       "isAdicionado": false,
       "isFavorito": true,
       "isAssistido": true,
@@ -251,57 +251,44 @@
       "stars": 5
     },
     {
-      "title": "Uma linda mulher",
-      "poster": "https://juliarolim.files.wordpress.com/2017/07/pretty_woman_movie-uma-linda-mulher-filme-90s-2017-blog-loucuras-de-julia-feededigno.jpg?w=700",
-      "description": "A mulher ",
+      "title": "Capitã Marvel",
+      "poster": "https://images2.alphacoders.com/979/thumb-350-979960.jpg",
+      "description": "mulher",
+      "isAdicionado": true,
+      "isFavorito": true,
+      "isAssistido": true,
+      "stars": 5,
       "id": 26
     },
     {
-      "title": "Oi ",
-      "poster": "https://juliarolim.files.wordpress.com/2017/07/pretty_woman_movie-uma-linda-mulher-filme-90s-2017-blog-loucuras-de-julia-feededigno.jpg?w=700",
-      "description": "aqui ",
+      "title": "As Panteras",
+      "poster": "https://cdn.ome.lt/PMBkSzNH4eattp7ofGZ-B3DnXTI=/1200x630/smart/extras/conteudos/as-panteras-2000.jpg",
+      "description": "filme de ação ",
+      "isAdicionado": true,
+      "isFavorito": true,
+      "isAssistido": true,
+      "stars": 5,
       "id": 27
     },
     {
-      "title": "Fernando Jubileu ",
-      "poster": "https://i0.wp.com/www.luizcarlosramos.net/wp-content/uploads/2016/04/paz-e-amor.jpg",
-      "description": "Amor e Paz",
+      "title": "deus e o diabo na terra do sol",
+      "poster": "https://miro.medium.com/focal/1200/675/51/30/1*0hvO3dxwV2HvxbNA2Gs7ug.jpeg",
+      "description": "Deus e o Diabo na Terra do sol ",
+      "isAdicionado": true,
+      "isFavorito": true,
+      "isAssistido": true,
+      "stars": 5,
       "id": 28
     },
     {
-      "title": "Princesa Jujuba",
-      "poster": [],
-      "description": "Fernando ",
+      "title": "Lagoa Azul ",
+      "poster": "http://s2.glbimg.com/J-8fDqd7rebEjwFU1ychdZXkIyE=/620x0/s.glbimg.com/jo/eg/f/original/2015/07/03/lagoa.jpg",
+      "description": "Filme sessão da tarde ",
       "isAdicionado": true,
+      "isFavorito": true,
+      "isAssistido": false,
+      "stars": 3,
       "id": 29
-    },
-    {
-      "title": "oloco",
-      "poster": "as",
-      "description": "loção",
-      "isAdicionado": true,
-      "id": 30
-    },
-    {
-      "title": "Jão de maria",
-      "poster": [],
-      "description": [],
-      "isAdicionado": true,
-      "id": 31
-    },
-    {
-      "title": "Fernando e Maria antonieta ",
-      "poster": [],
-      "description": "Alouuu ",
-      "isAdicionado": true,
-      "id": 32
-    },
-    {
-      "title": "teste",
-      "poster": [],
-      "description": [],
-      "isAdicionado": true,
-      "id": 33
     }
   ]
 }

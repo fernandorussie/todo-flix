@@ -1,7 +1,13 @@
 import React, { Component } from 'react'
 
+//lib
+import ReactStars from "react-rating-stars-component";
+
 //components 
 import { api } from '../services/api'
+
+//image
+import Background from '../assets/assetsHeader/inputIMG.svg'
 
 //style
 import * as S from './styles/styleApp'
@@ -18,8 +24,10 @@ export default class Header extends Component {
     //FunctionAdd
     title:[],
     description:[],
-    poster:[],
+    poster:[Background],
     isAdicionado:[],
+    isAssistido:false,
+    stars:0,
   }
   //OpenModal
   isToggleMenu = () => {
@@ -70,16 +78,23 @@ export default class Header extends Component {
       showPerfil:false,
       showAdd:false,
       showMenu:false,
+      title:[],
+      description:[],
+      poster:[],
+      isAdicionado:[],
     })
   }
   //FunctionAdd
   isAddFilms = () => {
-     api.post('/filmes',{
+      api.post('/filmes',{
       title:this.state.title,
       poster:this.state.poster,
       description:this.state.description,
-      isAdicionado:true
-    })
+      isAdicionado:true,
+      isFavorito: true,
+      isAssistido: this.state.isAssistido,
+      stars: this.state.stars
+     })
   }
   handleChangeTitle = (e) => {
     this.setState({
@@ -95,6 +110,21 @@ export default class Header extends Component {
     this.setState({
       description:e.target.value
     })
+  }
+  ratingChanged = (newRating) => {
+    console.log(newRating);
+    this.setState({
+      stars:newRating
+    })
+  };
+  radioChangedTrue = (value) => {
+    this.setState({
+      isAssistido:value.target.checked
+    })
+    console.log(value.target.checked)
+  }
+  radioChangedFalse = (value) => {
+    console.log(value.target.value)
   }
   render() {
     const {showMenu, showPerfil, showAdd, swapUser} = this.state
@@ -137,7 +167,7 @@ export default class Header extends Component {
                             </S.Form>
                             <S.FormImg>
                               <S.TitleInput>Imagem de Capa</S.TitleInput>
-                              <S.InputImg src=""alt=""/>
+                              <S.InputImg src={this.state.poster} alt=""/>
                               <input type="text" placeholder="Digite seu link" onChange={this.handleChangePoster}/>
                             </S.FormImg>
                           </S.FormBox>
@@ -146,24 +176,29 @@ export default class Header extends Component {
                               <S.TitleInput>Status</S.TitleInput>
                               <S.OptionRadio>
                                 <S.SpanRadio>
-                                  <input type="radio" name="status" value="Já assisti"/>
+                                  <input onChange={this.radioChangedTrue} type="radio" name="status" value="true"/>
                                   <p>Já assisti</p>
                                 </S.SpanRadio>
                                 <S.SpanRadio>
-                                  <input type="radio" name="status" value="Já assisti"/>
+                                  <input  onChange={this.radioChangedFalse} type="radio" name="status" value="false"/>
                                   <p>Ainda não assisti</p>
                                 </S.SpanRadio>
                               </S.OptionRadio>
                             </S.BoxStatus>
                             <S.BoxRating>
                               <S.TitleInput>Nota</S.TitleInput>
-                              <p>Estrelas</p>
+                              <ReactStars
+                                count={5}
+                                onChange={this.ratingChanged}
+                                size={40}
+                                activeColor="#ffd700"
+                              />
                             </S.BoxRating>
                           </S.SectionStatus>
-                          <div>
-                            <button onClick={this.isToggleAdd}>Cancelar</button>
-                            <button>Confirmar</button>
-                          </div>
+                          <S.BoxButton>
+                            <S.BtnCancel onClick={this.isClosetAll}>Cancelar</S.BtnCancel>
+                            <S.BtnConfirm>Confirmar</S.BtnConfirm>
+                          </S.BoxButton>
                         </S.BoxModal>
                         
                         ): null}

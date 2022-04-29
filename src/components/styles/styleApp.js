@@ -37,7 +37,7 @@ export const BoxSection = styled.div`
 export const SectionLogo = styled.div`
     width: 40%;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     color: white;
 `
@@ -245,23 +245,29 @@ justify-content: space-evenly;
 
 `
 export const InputImg = styled.img`
-width: 200px;
+width: 250px;
+height: 150px;
 border:1px solid #585858;
 border-radius: 4px;
+margin:10px 0;
 `
 export const InputName = styled.input`
-width: 100%;
+width: 80%;
 height: 7vh;
 background: #2C2C2C;
+color: white;
 border-radius: 4px;
 border: none;
+padding-left: 5px;
 `
 export const InputDescription = styled.input`
 width: 100%;
 height: 14vh;
 background: #2C2C2C;
+color: white;
 border-radius: 4px;
 border: none;
+padding-left: 5px;
 `
 export const SectionStatus = styled.div`
 width: 100%;
@@ -279,4 +285,55 @@ display: flex;
 margin: 5px 18px 5px 0;
 `
 export const BoxRating = styled.div`
+`
+export const BoxButton = styled.div`
+
+`
+export const BtnCancel = styled.button`
+min-width: 90px;
+  height: 30px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: transparent;
+  box-shadow: 0 5px transparent;
+    &:hover{
+      box-shadow: 0 3px transparent;
+      top: 1px;
+    }
+    &:active {
+      box-shadow: 0 0 transparent;
+      top: 5px;
+    }
+`
+export const BtnConfirm = styled.button`
+  min-width: 90px;
+  height: 30px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #E71B27;
+  box-shadow: 0 5px #d90429;
+    &:hover{
+      box-shadow: 0 3px #d90429;
+      top: 1px;
+    }
+    &:active {
+      box-shadow: 0 0 #d90429;
+      top: 5px;
+    }
 `
