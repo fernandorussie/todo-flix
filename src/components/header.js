@@ -95,7 +95,11 @@ export default class Header extends Component {
       isAssistido: this.state.isAssistido,
       stars: this.state.stars
      })
+     this.setState({
+       showAdd:false,
+     },window.location.reload())
   }
+
   handleChangeTitle = (e) => {
     this.setState({
       title:e.target.value
@@ -150,7 +154,7 @@ export default class Header extends Component {
                 <S.SectionAdd>
                     <S.BtnAdd onClick={this.isToggleAdd}>Adicionar filme</S.BtnAdd>
                         {showAdd ? ( 
-                        <S.BoxModal onSubmit={this.isAddFilms}>
+                        <S.BoxModal>
                           <S.TitleBox>
                             <S.TitleModal>Adicionar Filme</S.TitleModal>
                           </S.TitleBox>
@@ -197,7 +201,7 @@ export default class Header extends Component {
                           </S.SectionStatus>
                           <S.BoxButton>
                             <S.BtnCancel onClick={this.isClosetAll}>Cancelar</S.BtnCancel>
-                            <S.BtnConfirm>Confirmar</S.BtnConfirm>
+                            <S.BtnConfirm onClick={this.isAddFilms}>Confirmar</S.BtnConfirm>
                           </S.BoxButton>
                         </S.BoxModal>
                         
