@@ -300,7 +300,6 @@
       "stars": 4,
       "id": 30
     },
-    
     {
       "title": "eqb",
       "poster": "asda",
@@ -310,6 +309,16 @@
       "isAssistido": false,
       "stars": 0,
       "id": 31
+    },
+    {
+      "title": "Vingadores Ultimato ",
+      "poster": "https://popnow.com.br/wp-content/uploads/2021/01/image-asset-8.jpeg",
+      "description": "UM DOS MELHORES FILMES DO UCM",
+      "isAdicionado": true,
+      "isFavorito": true,
+      "isAssistido": true,
+      "stars": 5,
+      "id": 32
     }
   ]
 }
