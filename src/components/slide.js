@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import Carousel from 'nuka-carousel';
+import Img0 from '../assets/ToDoFlix Início/capitão.png'
 import Img1 from '../assets/ToDoFlix Início/img1.png'
 import Img2 from '../assets/ToDoFlix Início/img2.png'
 import Img3 from '../assets/ToDoFlix Início/img3.png'
@@ -45,7 +46,7 @@ const Arrow = styled.svg`
   }
 `
 const CardCarousel = styled.div`
-  height: 50vh;
+  height: 45vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -53,12 +54,10 @@ const CardCarousel = styled.div`
   padding-bottom: 5px;
 `
 const BoxInfo = styled.div`
-  height: 100%;
+  height: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-
-  margin-top: 5px;
+  justify-content: space-around;
 `
 const BtnFav = styled.figure`
   width: 22px;
@@ -73,7 +72,7 @@ export default class Slide extends Component {
       {title:"Capitão Fantástico",
       overview:"Nas florestas do estado de Washington, um pai cria seus seis filhos longe da civilização, em uma rígida rotina de aventuras. Ele é forçado a deixar o isolamento e leva sua família para encarar o mundo, desafiando sua ideia do que significa ser pai.",
       rank:"4/5",
-      poster:"https://files.fm/thumb_show.php?i=dz2pnnjta"
+      poster:Img0
       }
     ],
     Carrossel:[
@@ -159,7 +158,7 @@ export default class Slide extends Component {
               <CardCarousel>
                 <img src={item.poster} alt={item.title}/>
                 <BoxInfo>
-                  <p>{item.title}</p>
+                  <h3>{item.title}</h3>
                   <p>{item.overview}</p>
                 </BoxInfo>
               </CardCarousel>
