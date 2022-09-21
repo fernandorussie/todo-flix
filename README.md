@@ -10,5 +10,5 @@ Nesse projeto foi utilizado Reactjs, Styled-component, React Router, Axios, Nuka
 ### `Servidor Fake (JSON Server)`
 (https://www.npmjs.com/package/json-server)
 
-Criei um servidor fake com JSON Server, para armazenar a entrada de dados e informações
+Criei um servidor fake com JSON Server, para simular uma API e armazenar a entrada de dados e informações.
 
