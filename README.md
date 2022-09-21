@@ -7,7 +7,8 @@ Nesse projeto tive a oportunidade de criar um site parecido com o Netflix, poré
 
 Nesse projeto foi utilizado Reactjs, Styled-component, React Router, Axios, Nuka Carousel, Json Server
 
-### `npm run server`
+### `Servidor Fake (JSON Server)`
+(https://www.npmjs.com/package/json-server)
 
-Inicia o servidor fake do JSON Server
+Criei um servidor fake com JSON Server, para armazenar a entrada de dados e informações
 
