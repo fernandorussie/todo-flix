@@ -17,7 +17,7 @@ color:white;
 const BoxWraper = styled.div`
   display:flex;
   flex-wrap: wrap;
-  justify-content: none;
+  justify-content: space-between;
 
 `
 const Card = styled.div`
